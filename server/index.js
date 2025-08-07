@@ -28,5 +28,8 @@ app.post("/login", (req, res) => {
   });
 });
 app.listen(3001, () => {
-  console.log("server is  running");
+  console.log("server is running");
 });
+
+// Export the Express API for Vercel
+module.exports = app;
